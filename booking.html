@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Book Your Stay</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img
+        src="./assets/logo/bonz.ai-logo-color-landscape.png"
+        alt="bonz.ai's logotype"
+        class="header__logotype"
+      />
+
+      <nav class="header__nav">
+        <ul class="header__list body-text-xl">
+          <li class="header__list-item">
+            <a href="./index.html" class="header__link">Home</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__link header__link--active">Booking</a>
+          </li>
+          <li class="header__list-item">
+            <a href="./about.html" class="header__link">About</a>
+          </li>
+        </ul>
+
+        <button class="btn header__btn">Book your stay</button>
+      </nav>
+    </header>
+
+    <!-- BOOKING -->
+    <section class="booking">
+      <h1 class="booking__page-title heading-xxl">Book Your Stay</h1>
+      <h3 class="booking__page-sub-title heading-md">
+        Discover sustainable luxury powered by AI technology
+      </h3>
+
+      <form class="booking__form">
+        <label class="booking__label body-text-xl">
+          Check-in
+          <img
+            src="./assets/logo/calendar-days.svg"
+            alt=""
+            class="booking__icon"
+            aria-hidden="true"
+          />
+          <input type="text" placeholder="Pick a date" class="booking__input" />
+        </label>
+
+        <label class="booking__label body-text-xl">
+          Check-out
+          <img
+            src="./assets/logo/calendar-days.svg"
+            alt=""
+            class="booking__icon"
+            aria-hidden="true"
+          />
+          <input type="text" placeholder="Pick a date" class="booking__input" />
+        </label>
+
+        <label class="booking__label body-text-xl">
+          Guests
+          <select class="booking__input booking__input--gray">
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+          </select>
+        </label>
+
+        <label class="booking__label body-text-xl">
+          Room Type
+          <select class="booking__input booking__input--gray">
+            <option value="All">All Rooms</option>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Suite">Suite</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn btn--wide booking__btn">
+          Book now
+        </button>
+      </form>
+
+      <h2 class="booking__title heading-lg">6 rooms Available</h2>
+      <h3 class="booking__sub-title heading-sm">
+        Select dates to see availability
+      </h3>
+
+      <!-- PRODUCTS -->
+      <section class="products-container">
+        <!-- Card 1 -->
+        <article class="room-card">
+          <figure class="room-card__figure">
+            <img
+              src="./assets/photos/01-day.jpg"
+              alt="Hotel room with a couch, a desk and stairs leading up to a loft"
+              class="room-card__img"
+            />
+            <span class="room-card__rating">
+              <img
+                src="./assets/logo/star.svg"
+                alt=""
+                class="room-card__star-icon"
+                aria-hidden="true"
+              />
+              4.9
+            </span>
+          </figure>
+          <!-- Card details -->
+          <article class="room-card__details">
+            <section class="room-card__heading">
+              <h3 class="room-card__title heading-sm">EcoSmart Suite</h3>
+              <p class="room-card__size body-text-lg">
+                <img
+                  src="./assets/logo/users-round.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Up to 2 • 45 m2
+              </p>
+            </section>
+            <section class="room-card__price">
+              <h3 class="room-card__price-value heading-sm">$299</h3>
+              <p class="room-card__price-label body-text-lg">per night</p>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/wifi.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">King size bed</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Ocean View</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Smart climate</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Premium Toiletries</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/brain-purple.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                AI Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Voice Control</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Smart lighting</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Digital Concierge</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/leaf.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Sustainability <br />
+                100% renewable energy, recycled materials
+              </p>
+            </section>
+            <button class="btn room-card__btn">Reserve Room</button>
+          </article>
+        </article>
+        <!-- Card 2 -->
+        <article class="room-card">
+          <figure class="room-card__figure">
+            <img
+              src="./assets/photos/02-night.jpg"
+              alt="Hotel room with a fireplace and a patio with a nice view"
+              class="room-card__img"
+            />
+            <span class="room-card__rating">
+              <img
+                src="./assets/logo/star.svg"
+                alt=""
+                class="room-card__star-icon"
+                aria-hidden="true"
+              />
+              4.7
+            </span>
+          </figure>
+          <!-- Card details -->
+          <article class="room-card__details">
+            <section class="room-card__heading">
+              <h3 class="room-card__title heading-sm">GreenTech Deluxe</h3>
+              <p class="room-card__size body-text-lg">
+                <img
+                  src="./assets/logo/users-round.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Up to 2 • 35 m2
+              </p>
+            </section>
+            <section class="room-card__price">
+              <h3 class="room-card__price-value heading-sm">$199</h3>
+              <p class="room-card__price-label body-text-lg">per night</p>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/wifi.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Queen size bed</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">City View</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Smart TV</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Premium Toiletries</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/brain-purple.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                AI Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Voice Control</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Smart lighting</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Predictive Climate</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/leaf.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Sustainability <br />
+                Solar powered, low-flow water systems
+              </p>
+            </section>
+            <button class="btn room-card__btn">Reserve Room</button>
+          </article>
+        </article>
+        <!-- Card 3 -->
+        <article class="room-card">
+          <figure class="room-card__figure">
+            <img
+              src="./assets/photos/04-day.jpg"
+              alt="Hotel room with a double bed on a loft"
+              class="room-card__img"
+            />
+            <span class="room-card__rating">
+              <img
+                src="./assets/logo/star.svg"
+                alt=""
+                class="room-card__star-icon"
+                aria-hidden="true"
+              />
+              4.2
+            </span>
+          </figure>
+          <!-- Card details -->
+          <article class="room-card__details">
+            <section class="room-card__heading">
+              <h3 class="room-card__title heading-sm">Sustainable Studio</h3>
+              <p class="room-card__size body-text-lg">
+                <img
+                  src="./assets/logo/users-round.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Up to 2 • 25 m2
+              </p>
+            </section>
+            <section class="room-card__price">
+              <h3 class="room-card__price-value heading-sm">$149</h3>
+              <p class="room-card__price-label body-text-lg">per night</p>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/wifi.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Double Bed</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Garden View</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Eco-friendly Bath</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/brain-purple.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                AI Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Smart lighting</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Digital Concierge</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/leaf.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Sustainability <br />
+                Bamboo furniture, organic linens
+              </p>
+            </section>
+            <button class="btn room-card__btn">Reserve Room</button>
+          </article>
+        </article>
+        <!-- Card 4 -->
+        <article class="room-card">
+          <figure class="room-card__figure">
+            <img
+              src="./assets/photos/05-day.jpg"
+              alt="Hotel room with a couch, a coffe table and a plant"
+              class="room-card__img"
+            />
+            <span class="room-card__rating">
+              <img
+                src="./assets/logo/star.svg"
+                alt=""
+                class="room-card__star-icon"
+                aria-hidden="true"
+              />
+              4.6
+            </span>
+          </figure>
+          <!-- Card details -->
+          <article class="room-card__details">
+            <section class="room-card__heading">
+              <h3 class="room-card__title heading-sm">Nature's Haven</h3>
+              <p class="room-card__size body-text-lg">
+                <img
+                  src="./assets/logo/users-round.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Up to 3 • 40 m2
+              </p>
+            </section>
+            <section class="room-card__price">
+              <h3 class="room-card__price-value heading-sm">$229</h3>
+              <p class="room-card__price-label body-text-lg">per night</p>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/wifi.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">King size bed</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Forest View</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Balcony</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Air purifier</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/brain-purple.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                AI Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Voice Control</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Smart lighting</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Wellness Monitoring</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/leaf.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Sustainability <br />
+                Living plant walls, carbon-negative
+              </p>
+            </section>
+            <button class="btn room-card__btn">Reserve Room</button>
+          </article>
+        </article>
+        <!-- Card 5 -->
+        <article class="room-card">
+          <figure class="room-card__figure">
+            <img
+              src="./assets/photos/07-night.jpg"
+              alt="Hotel room with loft, fireplace and a terrace"
+              class="room-card__img"
+            />
+            <span class="room-card__rating">
+              <img
+                src="./assets/logo/star.svg"
+                alt=""
+                class="room-card__star-icon"
+                aria-hidden="true"
+              />
+              5.0
+            </span>
+          </figure>
+          <!-- Card details -->
+          <article class="room-card__details">
+            <section class="room-card__heading">
+              <h3 class="room-card__title heading-sm">AI Presidential Suite</h3>
+              <p class="room-card__size body-text-lg">
+                <img
+                  src="./assets/logo/users-round.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Up to 4 • 80 m2
+              </p>
+            </section>
+            <section class="room-card__price">
+              <h3 class="room-card__price-value heading-sm">$499</h3>
+              <p class="room-card__price-label body-text-lg">per night</p>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/wifi.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">2 King size bed</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Panoramic View</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Private Terrace</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Luxury Bath</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/brain-purple.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                AI Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Full AI Suite</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Predictive Service</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Holographic Display</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/leaf.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Sustainability <br />
+                Net-zero carbon, rainwater harvesting
+              </p>
+            </section>
+            <button class="btn room-card__btn">Reserve Room</button>
+          </article>
+        </article>
+        <!-- Card 6 -->
+        <article class="room-card">
+          <figure class="room-card__figure">
+            <img
+              src="./assets/photos/09-night.jpg"
+              alt="Two chairs on an open terrace with with over the ocean and mountains"
+              class="room-card__img"
+            />
+            <span class="room-card__rating">
+              <img
+                src="./assets/logo/star.svg"
+                alt=""
+                class="room-card__star-icon"
+                aria-hidden="true"
+              />
+              4.8
+            </span>
+          </figure>
+          <!-- Card details -->
+          <article class="room-card__details">
+            <section class="room-card__heading">
+              <h3 class="room-card__title heading-sm">Urban EcoLoft</h3>
+              <p class="room-card__size body-text-lg">
+                <img
+                  src="./assets/logo/users-round.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Up to 2 • 30 m2
+              </p>
+            </section>
+            <section class="room-card__price">
+              <h3 class="room-card__price-value heading-sm">$179</h3>
+              <p class="room-card__price-label body-text-lg">per night</p>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/wifi.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Queen size bed</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Ocean View</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">High Ceiling</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag">Natural Light</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/brain-purple.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                AI Features
+              </p>
+              <ul class="room-card__list">
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Smart lighting</p>
+                </li>
+                <li class="room-card__list-item">
+                  <p class="room-card__tag text-purple">Digital Concierge</p>
+                </li>
+              </ul>
+            </section>
+            <section class="room-card__features">
+              <p class="room-card__sub-title body-text-lg">
+                <img
+                  src="./assets/logo/leaf.svg"
+                  alt=""
+                  class="room-card__icon"
+                  aria-hidden="true"
+                />
+                Sustainability <br />
+                Upcycled furniture, zero waste
+              </p>
+            </section>
+            <button class="btn room-card__btn">Reserve Room</button>
+          </article>
+        </article>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="footer__content">
+        <img
+          src="./assets/logo/bonz.ai-logo-color-portrait-full.png"
+          alt="bonz.ai's logotype"
+          class="footer__logotype"
+        />
+        <p class="footer__description">
+          The hotel of the future, where sustainability meets smart technology.
+          Experience AI-driven hospitality with an eco-conscious heart.
+        </p>
+
+        <section class="footer-info">
+          <h3 class="footer__title heading-sm">Contact</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              123 Green Street, Eco City, EC 12345
+            </li>
+            <li class="footer__list-item">+1 (555) 123-4567</li>
+            <li class="footer__list-item">hello@bonz.ai</li>
+          </ul>
+        </section>
+
+        <section class="footer-info">
+          <h3 class="footer__title heading-sm">Quick Links</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Terms of Service</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Sustainability Report</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <p class="footer__copyright body-text-xl">
+        © 2025 Bonz.ai. All rights reserved. Building a sustainable future, one
+        stay at a time.
+      </p>
+    </footer>
+  </body>
+</html>
