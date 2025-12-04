@@ -30,6 +30,17 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 1.5rem 1rem;
+  background: white;
+}
+
 /* --------------- UTILITY CLASSES --------------- */
 .heading-xxl {
   font-size: 5rem;
@@ -407,6 +418,7 @@ body {
         padding: 1.5rem 1rem;
         color: black;
         font-weight: 600;
+        font-size: 1rem;
         border: 1px solid black;
         border-radius: 1rem;
         margin-top: 0.75rem;
@@ -774,8 +786,7 @@ body {
 
         .header__btn {
           display: block;
-          margin: 1rem;
-          margin-bottom: 6rem;
+          margin: auto 1rem;
         }
       }
     }
