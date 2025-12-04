@@ -9,62 +9,58 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <img
-        src="./assets/logo/bonz.ai-logo-color-landscape.png"
-        alt="bonz.ai's logotype"
-        class="header__logotype"
-      />
+      <section class="header__content wrapper">
+        <img
+          src="./assets/logo/bonz.ai-logo-color-landscape.png"
+          alt=""
+          class="header__img"
+          aria-hidden="true"
+        />
 
-      <nav class="header__nav">
-        <ul class="header__list body-text-xl">
-          <li class="header__list-item">
-            <a href="./index.html" class="header__link">Home</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link header__link--active">Booking</a>
-          </li>
-          <li class="header__list-item">
-            <a href="./about.html" class="header__link">About</a>
-          </li>
-        </ul>
+        <input type="checkbox" class="header__burger-btn" id="menu" />
+        <label for="menu" class="header__burger" aria-label="Menu">
+          <span class="header__burger-line"></span>
+        </label>
 
-        <button class="btn header__btn">Book your stay</button>
-      </nav>
+        <nav class="header__nav">
+          <ul class="header__list body-text-xl">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link header__link--active">Booking</a>
+            </li>
+            <li class="header__item">
+              <a href="./about.html" class="header__link">About</a>
+            </li>
+          </ul>
+          <button class="btn header__btn">Book your stay</button>
+        </nav>
+      </section>
     </header>
 
     <!-- BOOKING -->
     <section class="booking">
       <h1 class="booking__page-title heading-xxl">Book Your Stay</h1>
-      <h3 class="booking__page-sub-title heading-md">
+      <h2 class="booking__page-sub-title heading-md">
         Discover sustainable luxury powered by AI technology
-      </h3>
+      </h2>
 
-      <form class="booking__form">
+      <!-- BOOKING FORM -->
+      <form class="booking__form wrapper">
         <label class="booking__label body-text-xl">
           Check-in
-          <img
-            src="./assets/logo/calendar-days.svg"
-            alt=""
-            class="booking__icon"
-            aria-hidden="true"
-          />
-          <input type="text" placeholder="Pick a date" class="booking__input" />
+          <input type="date" class="booking__field" required />
         </label>
 
         <label class="booking__label body-text-xl">
           Check-out
-          <img
-            src="./assets/logo/calendar-days.svg"
-            alt=""
-            class="booking__icon"
-            aria-hidden="true"
-          />
-          <input type="text" placeholder="Pick a date" class="booking__input" />
+          <input type="date" class="booking__field" required />
         </label>
 
-        <label class="booking__label body-text-xl">
+        <label for="guests" class="booking__label body-text-xl">
           Guests
-          <select class="booking__input booking__input--gray">
+          <select class="booking__field booking__field--gray" id="guests">
             <option value="1">1 Guest</option>
             <option value="2" selected>2 Guests</option>
             <option value="3">3 Guests</option>
@@ -73,9 +69,9 @@
           </select>
         </label>
 
-        <label class="booking__label body-text-xl">
+        <label for="room-type" class="booking__label body-text-xl">
           Room Type
-          <select class="booking__input booking__input--gray">
+          <select class="booking__field booking__field--gray" id="room-type">
             <option value="All">All Rooms</option>
             <option value="Single">Single</option>
             <option value="Double">Double</option>
@@ -83,18 +79,16 @@
           </select>
         </label>
 
-        <button type="submit" class="btn btn--wide booking__btn">
-          Book now
-        </button>
+        <button type="submit" class="btn booking__btn">Book now</button>
       </form>
 
-      <h2 class="booking__title heading-lg">6 rooms Available</h2>
-      <h3 class="booking__sub-title heading-sm">
-        Select dates to see availability
-      </h3>
+      <!-- PRODUCT-SECTION -->
+      <section class="product-section wrapper">
+        <h2 class="product-section__title heading-lg">6 rooms Available</h2>
+        <h3 class="product-section__sub-title heading-sm">
+          Select dates to see availability
+        </h3>
 
-      <!-- PRODUCTS -->
-      <section class="products-container">
         <!-- Card 1 -->
         <article class="room-card">
           <figure class="room-card__figure">
@@ -114,7 +108,7 @@
             </span>
           </figure>
           <!-- Card details -->
-          <article class="room-card__details">
+          <section class="room-card__details">
             <section class="room-card__heading">
               <h3 class="room-card__title heading-sm">EcoSmart Suite</h3>
               <p class="room-card__size body-text-lg">
@@ -142,17 +136,17 @@
                 Features
               </p>
               <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">King size bed</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">King size bed</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Ocean View</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Ocean View</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Smart climate</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart climate</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Premium Toiletries</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Premium Toiletries</p>
                 </li>
               </ul>
             </section>
@@ -166,15 +160,15 @@
                 />
                 AI Features
               </p>
-              <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Voice Control</p>
+              <ul class="room-card__list room-card__list--purple">
+                <li class="room-card__item">
+                  <p class="room-card__feature">Voice Control</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Smart lighting</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart lighting</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Digital Concierge</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Digital Concierge</p>
                 </li>
               </ul>
             </section>
@@ -191,7 +185,7 @@
               </p>
             </section>
             <button class="btn room-card__btn">Reserve Room</button>
-          </article>
+          </section>
         </article>
         <!-- Card 2 -->
         <article class="room-card">
@@ -212,7 +206,7 @@
             </span>
           </figure>
           <!-- Card details -->
-          <article class="room-card__details">
+          <section class="room-card__details">
             <section class="room-card__heading">
               <h3 class="room-card__title heading-sm">GreenTech Deluxe</h3>
               <p class="room-card__size body-text-lg">
@@ -240,17 +234,17 @@
                 Features
               </p>
               <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Queen size bed</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Queen size bed</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">City View</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">City View</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Smart TV</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart TV</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Premium Toiletries</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Premium Toiletries</p>
                 </li>
               </ul>
             </section>
@@ -264,15 +258,15 @@
                 />
                 AI Features
               </p>
-              <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Voice Control</p>
+              <ul class="room-card__list room-card__list--purple">
+                <li class="room-card__item">
+                  <p class="room-card__feature">Voice Control</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Smart lighting</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart lighting</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Predictive Climate</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Predictive Climate</p>
                 </li>
               </ul>
             </section>
@@ -289,7 +283,7 @@
               </p>
             </section>
             <button class="btn room-card__btn">Reserve Room</button>
-          </article>
+          </section>
         </article>
         <!-- Card 3 -->
         <article class="room-card">
@@ -310,7 +304,7 @@
             </span>
           </figure>
           <!-- Card details -->
-          <article class="room-card__details">
+          <section class="room-card__details">
             <section class="room-card__heading">
               <h3 class="room-card__title heading-sm">Sustainable Studio</h3>
               <p class="room-card__size body-text-lg">
@@ -338,14 +332,14 @@
                 Features
               </p>
               <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Double Bed</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Double Bed</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Garden View</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Garden View</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Eco-friendly Bath</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Eco-friendly Bath</p>
                 </li>
               </ul>
             </section>
@@ -359,12 +353,12 @@
                 />
                 AI Features
               </p>
-              <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Smart lighting</p>
+              <ul class="room-card__list room-card__list--purple">
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart lighting</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Digital Concierge</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Digital Concierge</p>
                 </li>
               </ul>
             </section>
@@ -381,7 +375,7 @@
               </p>
             </section>
             <button class="btn room-card__btn">Reserve Room</button>
-          </article>
+          </section>
         </article>
         <!-- Card 4 -->
         <article class="room-card">
@@ -402,7 +396,7 @@
             </span>
           </figure>
           <!-- Card details -->
-          <article class="room-card__details">
+          <section class="room-card__details">
             <section class="room-card__heading">
               <h3 class="room-card__title heading-sm">Nature's Haven</h3>
               <p class="room-card__size body-text-lg">
@@ -430,17 +424,17 @@
                 Features
               </p>
               <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">King size bed</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">King size bed</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Forest View</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Forest View</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Balcony</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Balcony</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Air purifier</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Air purifier</p>
                 </li>
               </ul>
             </section>
@@ -454,15 +448,15 @@
                 />
                 AI Features
               </p>
-              <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Voice Control</p>
+              <ul class="room-card__list room-card__list--purple">
+                <li class="room-card__item">
+                  <p class="room-card__feature">Voice Control</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Smart lighting</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart lighting</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Wellness Monitoring</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Wellness Monitoring</p>
                 </li>
               </ul>
             </section>
@@ -479,7 +473,7 @@
               </p>
             </section>
             <button class="btn room-card__btn">Reserve Room</button>
-          </article>
+          </section>
         </article>
         <!-- Card 5 -->
         <article class="room-card">
@@ -500,7 +494,7 @@
             </span>
           </figure>
           <!-- Card details -->
-          <article class="room-card__details">
+          <section class="room-card__details">
             <section class="room-card__heading">
               <h3 class="room-card__title heading-sm">AI Presidential Suite</h3>
               <p class="room-card__size body-text-lg">
@@ -528,17 +522,17 @@
                 Features
               </p>
               <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">2 King size bed</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">2 King size bed</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Panoramic View</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Panoramic View</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Private Terrace</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Private Terrace</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Luxury Bath</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Luxury Bath</p>
                 </li>
               </ul>
             </section>
@@ -552,15 +546,15 @@
                 />
                 AI Features
               </p>
-              <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Full AI Suite</p>
+              <ul class="room-card__list room-card__list--purple">
+                <li class="room-card__item">
+                  <p class="room-card__feature">Full AI Suite</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Predictive Service</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Predictive Service</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Holographic Display</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Holographic Display</p>
                 </li>
               </ul>
             </section>
@@ -577,7 +571,7 @@
               </p>
             </section>
             <button class="btn room-card__btn">Reserve Room</button>
-          </article>
+          </section>
         </article>
         <!-- Card 6 -->
         <article class="room-card">
@@ -598,7 +592,7 @@
             </span>
           </figure>
           <!-- Card details -->
-          <article class="room-card__details">
+          <section class="room-card__details">
             <section class="room-card__heading">
               <h3 class="room-card__title heading-sm">Urban EcoLoft</h3>
               <p class="room-card__size body-text-lg">
@@ -626,17 +620,17 @@
                 Features
               </p>
               <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Queen size bed</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Queen size bed</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Ocean View</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Ocean View</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">High Ceiling</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">High Ceiling</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag">Natural Light</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Natural Light</p>
                 </li>
               </ul>
             </section>
@@ -650,12 +644,12 @@
                 />
                 AI Features
               </p>
-              <ul class="room-card__list">
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Smart lighting</p>
+              <ul class="room-card__list room-card__list--purple">
+                <li class="room-card__item">
+                  <p class="room-card__feature">Smart lighting</p>
                 </li>
-                <li class="room-card__list-item">
-                  <p class="room-card__tag text-purple">Digital Concierge</p>
+                <li class="room-card__item">
+                  <p class="room-card__feature">Digital Concierge</p>
                 </li>
               </ul>
             </section>
@@ -672,48 +666,50 @@
               </p>
             </section>
             <button class="btn room-card__btn">Reserve Room</button>
-          </article>
+          </section>
         </article>
       </section>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <section class="footer__content">
-        <img
-          src="./assets/logo/bonz.ai-logo-color-portrait-full.png"
-          alt="bonz.ai's logotype"
-          class="footer__logotype"
-        />
-        <p class="footer__description">
-          The hotel of the future, where sustainability meets smart technology.
-          Experience AI-driven hospitality with an eco-conscious heart.
-        </p>
+      <section class="footer__content wrapper">
+        <section class="footer__brand">
+          <img
+            src="./assets/logo/bonz.ai-logo-color-portrait-full.png"
+            alt=""
+            class="footer__img"
+            aria-hidden="true"
+          />
+          <p class="footer__description">
+            The hotel of the future, where sustainability meets smart
+            technology. <br />
+            Experience AI-driven hospitality with an eco-conscious heart.
+          </p>
+        </section>
 
-        <section class="footer-info">
+        <section class="footer__info">
           <h3 class="footer__title heading-sm">Contact</h3>
           <ul class="footer__list">
-            <li class="footer__list-item">
-              123 Green Street, Eco City, EC 12345
-            </li>
-            <li class="footer__list-item">+1 (555) 123-4567</li>
-            <li class="footer__list-item">hello@bonz.ai</li>
+            <li class="footer__item">123 Green Street, Eco City, EC 12345</li>
+            <li class="footer__item">+1 (555) 123-4567</li>
+            <li class="footer__item">hello@bonz.ai</li>
           </ul>
         </section>
 
-        <section class="footer-info">
+        <section class="footer__info">
           <h3 class="footer__title heading-sm">Quick Links</h3>
           <ul class="footer__list">
-            <li class="footer__list-item">
+            <li class="footer__item">
               <a href="#" class="footer__link">Privacy Policy</a>
             </li>
-            <li class="footer__list-item">
+            <li class="footer__item">
               <a href="#" class="footer__link">Terms of Service</a>
             </li>
-            <li class="footer__list-item">
+            <li class="footer__item">
               <a href="#" class="footer__link">Sustainability Report</a>
             </li>
-            <li class="footer__list-item">
+            <li class="footer__item">
               <a href="#" class="footer__link">Careers</a>
             </li>
           </ul>
