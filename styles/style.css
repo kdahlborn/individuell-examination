@@ -894,6 +894,10 @@ body {
         margin: 0;
         padding-block: 2rem;
         border-radius: 0;
+
+        .info-section__btn {
+          width: 100%;
+        }
       }
     }
   }
