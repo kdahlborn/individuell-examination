@@ -34,7 +34,6 @@ input,
 select,
 textarea {
   -webkit-appearance: none;
-  appearance: none;
   border-radius: 1rem;
   border: 1px solid black;
   padding: 1.5rem 1rem;
