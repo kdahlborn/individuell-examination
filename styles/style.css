@@ -394,15 +394,8 @@ body {
       font-weight: 600;
       grid-column: span 2;
 
-      .booking__icon {
-        cursor: pointer;
-        position: absolute;
-        padding-left: 0.75rem;
-      }
-
       .booking__field {
         cursor: pointer;
-        min-width: 0;
         width: 100%;
         text-align: center;
         padding: 1.5rem 1rem;
