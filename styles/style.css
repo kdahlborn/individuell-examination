@@ -381,6 +381,7 @@ body {
 
   /* BOOKING FORM */
   .booking__form {
+    min-width: 0;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1.5rem;
@@ -391,12 +392,17 @@ body {
     margin-block: 3rem 4rem;
 
     .booking__label {
+      min-width: 0;
       font-weight: 600;
       grid-column: span 2;
 
       .booking__field {
         cursor: pointer;
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        appearance: none;
+        -webkit-appearance: none;
         text-align: center;
         padding: 1.5rem 1rem;
         color: black;
